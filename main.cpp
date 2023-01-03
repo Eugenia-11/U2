@@ -1,17 +1,18 @@
-#include <string.h>
 #include <stdio.h>
 
-int main(int argc, char* argv[])
-{
-    unsigned char maxlen = 0;
-    char len = 0;
-    char buf[30] = {0,};
 
-    len = strlen(argv[1]);
-    if(len>30){
-        printf("Error!! Max Size:30\n");
-    }else{
-       printf("Okay!!");
-       strcpy(buf, argv[1]);
-    }
+int sum(int a, int b) {
+return a + b;
+}
+
+int minus(int a, int b) {
+return a - b;
+}
+
+int main ()
+{
+    int x = 9;
+    int y = 7;
+    printf("sum : %d \n", sum(x, y));
+    printf("minus : %d \n", minus(x, y));
 }
